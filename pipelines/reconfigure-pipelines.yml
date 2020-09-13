@@ -3,7 +3,7 @@ resources:
   type: git
   icon: bitbucket
   source:
-    uri: https://github.com/karandit/examples.git
+    uri: https://github.com/karandit/examples
 
 jobs:
 - name: configure-pipelines
