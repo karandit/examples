@@ -1,7 +1,7 @@
 resources:
 - name: concourse-examples
   type: git
-  icon: github
+  icon: bitbucket
   source:
     uri: git@github.com:karandit/examples.git
 
