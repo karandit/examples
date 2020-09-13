@@ -6,6 +6,12 @@ resources:
     uri: https://github.com/karandit/examples
 
 jobs:
+- name: configure-self
+  plan:
+  - get: concourse-examples
+    trigger: true
+  - set_pipeline: reconfigure-pipelines
+    file: concourse-examples/pipelines/reconfigure-pipelines.yml
 - name: configure-pipelines
   public: true
   plan:
